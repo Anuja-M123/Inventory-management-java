@@ -27,11 +27,13 @@ System.out.println("Connection Established");
 else {
 System.out.println("Check the Connection");
 }
+int choice;
+do {
    Scanner sc1=new Scanner(System.in);
 System.out.println("1.Admin");
 System.out.println("2.Agent");
 System.out.println("3.Exit");
-int choice=sc1.nextInt();
+choice=sc1.nextInt();
 switch(choice)
 {
 case 1:
@@ -181,6 +183,7 @@ break;
 case 3:
 break;
 }
-}
+}while(choice!=3);
 
+}
 }
